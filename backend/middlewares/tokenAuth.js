@@ -7,7 +7,7 @@ const verifyToken = async (req, res, next) => {
     const token = req.cookies.token;
     // because token is not storing in the cookie, we are hardcoding it here
     // const token =
-    //   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODAwMGNkODAzODhhY2VjMjQwZDk5YiIsImlhdCI6MTcwMjk3ODA1MCwiZXhwIjoxNzAzNTgyODUwfQ.D9SVvr6aE5RPvzQ3ESgA9szCGOmcQtxasgVh2HFTRyw";
+    //   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODAwMGNkODAzODhhY2VjMjQwZDk5YiIsImlhdCI6MTcwMzAxMTQwNiwiZXhwIjoxNzAzNjE2MjA2fQ.flYuhN3_66GlRI-PN-MbQ1DVZ-ps0DeqkbgVUVkSNKI";
 
     if (!token) {
       errorHandler("User not authorized", 401);
